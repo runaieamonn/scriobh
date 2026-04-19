@@ -4,7 +4,7 @@ import react from '@astrojs/react';
 
 export default defineConfig({
   site: 'https://runaieamonn.github.io',
-  base: '/scriobh',
+  base: '/scriobh/',
   output: 'static',
   server: { host: true },
   vite: { server: { allowedHosts: ['hostinger.tailbcc5.ts.net'] } },
