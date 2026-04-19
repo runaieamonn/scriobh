@@ -19,7 +19,7 @@ const formattedDate = date.toLocaleDateString('en-US', {
 ---
 
 <a
-  href={`/${slug}`}
+  href={`${import.meta.env.BASE_URL}${slug}`}
   class="group flex flex-col rounded-2xl overflow-hidden bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
 >
   <div class="aspect-video w-full overflow-hidden flex-shrink-0">
