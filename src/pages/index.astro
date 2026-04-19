@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import PostCard from '../components/PostCard.astro';
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<Layout title="eamonn.org — Writing by Eamonn O'Brien-Strain">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <header class="mb-12 sm:mb-16">
+      <h1 class="text-3xl sm:text-4xl font-bold text-zinc-900 dark:text-zinc-100 tracking-tight mb-3">
+        Writing
+      </h1>
+      <p class="text-lg text-zinc-500 dark:text-zinc-400 max-w-xl">
+        Essays, projects, and notes by Eamonn O'Brien-Strain — engineer, tinkerer, writer.
+      </p>
+    </header>
+
+    <section
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+      aria-label="Articles"
+    >
+      {posts.map((post) => (
+        <PostCard
+          title={post.data.title}
+          slug={post.slug}
+          date={post.data.date}
+          excerpt={post.data.excerpt}
+          coverImage={post.data.coverImage}
+        />
+      ))}
+    </section>
+  </div>
+</Layout>

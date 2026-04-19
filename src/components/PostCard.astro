@@ -1,0 +1,53 @@
+---
+import { slugGradient } from '../utils/gradient';
+
+interface Props {
+  title: string;
+  slug: string;
+  date: Date;
+  excerpt: string;
+  coverImage?: string;
+}
+
+const { title, slug, date, excerpt, coverImage } = Astro.props;
+const gradient = slugGradient(slug);
+const formattedDate = date.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<a
+  href={`/${slug}`}
+  class="group flex flex-col rounded-2xl overflow-hidden bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+>
+  <div class="aspect-video w-full overflow-hidden flex-shrink-0">
+    {coverImage ? (
+      <img
+        src={coverImage}
+        alt={title}
+        loading="lazy"
+        decoding="async"
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+      />
+    ) : (
+      <div class={`w-full h-full bg-gradient-to-br ${gradient} opacity-90 group-hover:opacity-100 transition-opacity duration-300`} />
+    )}
+  </div>
+
+  <div class="flex flex-col flex-1 p-5 gap-2">
+    <time
+      datetime={date.toISOString()}
+      class="text-xs font-medium text-zinc-400 dark:text-zinc-500 uppercase tracking-wide"
+    >
+      {formattedDate}
+    </time>
+    <h2 class="text-base font-semibold text-zinc-900 dark:text-zinc-100 leading-snug group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors line-clamp-2">
+      {title}
+    </h2>
+    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed line-clamp-3 flex-1">
+      {excerpt}
+    </p>
+  </div>
+</a>

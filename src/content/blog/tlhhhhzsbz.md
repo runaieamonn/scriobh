@@ -1,0 +1,18 @@
+---
+title: ""
+slug: "tlhhhhzsbz"
+date: 2006-09-07
+excerpt: "--- date: '2006-09-07 14:29:00' layout: post slug: draft-of-brochure-for-enchanted-hills-house status: publish ref: http://107starlite.com/brochure.html title:…"
+---
+---
+date: '2006-09-07 14:29:00'
+layout: post
+slug: draft-of-brochure-for-enchanted-hills-house
+status: publish
+ref: http://107starlite.com/brochure.html
+title: Draft of brochure for Enchanted Hills house
+wordpress_id: '103'
+categories: Personal
+---
+
+Well, we now have a [draft of the brochure](http://107starlite.com/brochure.html) offering our house for sale.

@@ -1,0 +1,18 @@
+---
+title: ""
+slug: "sdforum"
+date: 2004-07-26
+excerpt: "--- date: '2004-07-26 15:31:21' layout: post slug: sdforum status: publish ref: http://www.sdforum.org/SDForum/Templates/Calendar.aspx title: SDForum…"
+---
+---
+date: '2004-07-26 15:31:21'
+layout: post
+slug: sdforum
+status: publish
+ref: http://www.sdforum.org/SDForum/Templates/Calendar.aspx
+title: SDForum
+wordpress_id: '30'
+categories: Programming
+---
+
+Some interesting technical events sponsored by the [SDForum](http://www.sdforum.org/SDForum/Templates/Calendar.aspx).

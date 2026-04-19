@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//home/eob/src/scriobh/**)",
+      "Read(//home/eob/src/scriobh/writefreely-main/**)",
+      "Bash(sqlite3 *)",
+      "Bash(python3 scripts/migrate.py)",
+      "Bash(npm run *)"
+    ]
+  }
+}

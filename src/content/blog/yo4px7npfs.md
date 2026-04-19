@@ -1,0 +1,18 @@
+---
+title: ""
+slug: "yo4px7npfs"
+date: 2004-10-17
+excerpt: "--- date: '2004-10-17 00:33:08' layout: post slug: ehcache status: publish ref: http://ehcache.sourceforge.net/ title: ehcache wordpress_id: '49' categories:…"
+---
+---
+date: '2004-10-17 00:33:08'
+layout: post
+slug: ehcache
+status: publish
+ref: http://ehcache.sourceforge.net/
+title: ehcache
+wordpress_id: '49'
+categories: Programming
+---
+
+We buillt a cache like [ehcache](http://ehcache.sourceforge.net/) for a previous project.  Next time I think I will try using ehcache instead.
